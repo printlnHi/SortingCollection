@@ -1,4 +1,6 @@
 def insertionSort(array):
+    '''performs insertion sort on array, return is void'''
+    
     n = len(array)
     for i in range(n):
         x = array[i]
