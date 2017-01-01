@@ -1,3 +1,5 @@
+#Source: introduction to algorithms
+
 def selectionSort(array):
     '''performs selection sort on array, return is void'''
     for i in range(len(array)-1):
