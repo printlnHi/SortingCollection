@@ -1,5 +1,5 @@
 def mergeSort(array):
-    '''Performs in-place merge-sort without the recursive call of other functions
+    '''Performs merge-sort on array without the recursive call of other functions
     return is void'''
     
     subarrays = [list([i]) for i in array]
