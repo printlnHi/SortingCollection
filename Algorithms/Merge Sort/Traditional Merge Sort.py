@@ -1,5 +1,5 @@
 #Pseudo code from Introduction to Algorithms, 2008
-def Merge(A,p,q,r):
+def merge(A,p,q,r):
     n1 = q-p+1
     n2 = r-q
     L = []
@@ -20,12 +20,12 @@ def Merge(A,p,q,r):
             A[k] = R[j]
             j+=1
 
-def MergeSort(A,p=0,r=None):
-    '''Performs a in-place merge sort on A, return is void'''
+def mergeSort(A,p=0,r=None):
+    '''Performs a merge sort on A, return is void'''
     if r == None:
         r = len(A)-1
     if p<r:
         q = int((p+r)/2)
-        MergeSort(A,p=p,r=q)
-        MergeSort(A,p=q+1,r=r)
-        Merge(A,p,q,r)
+        mergeSort(A,p=p,r=q)
+        mergeSort(A,p=q+1,r=r)
+        merge(A,p,q,r)
